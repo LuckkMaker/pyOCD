@@ -147,6 +147,7 @@ from . import target_Air32F103xx
 from . import target_AMA3B1KK
 from . import target_APM32F403xx
 from . import target_G32F031
+from . import target_G32M3101
 
 ## @brief Dictionary of all builtin targets.
 #
@@ -154,6 +155,7 @@ from . import target_G32F031
 #   instead of dashes punctuation. See pyocd.target.normalise_target_type_name() for the code that
 #   normalises user-provided target type names for comparison with these.
 BUILTIN_TARGETS = {
+          'g32m3101x8' : target_G32M3101.G32M3101x8,
           'g32f031x8' : target_G32F031.G32F031x8,
           'apm32f403xb': target_APM32F403xx.APM32F403xB,
           'mps2_an521': target_MPS2_AN521.AN521,
